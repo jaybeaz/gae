@@ -1,0 +1,49 @@
+_mysql           37656   0.0  1.0  2829668 171824   ??  Ss   10:50AM   0:01.72 /usr/local/mysql/bin/mysqld --user=_mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data --plugin-dir=/usr/local/mysql/lib/plugin --log-error=/usr/local/mysql/data/mysqld.local.err --pid-file=/usr/local/mysql/data/mysqld.local.pid
+
+
+12345 ... 5 Apr16 9:09.32 /usr/local/Cellar/mysql/5.6.17/bin/mysqld --basedir=/usr/local/Cellar/mysql/5.6.17 --datadir=/usr/local/var/mysql --bind-address=127.0.0.1 
+
+
+/usr/local/mysql/bin
+
+mysql -u root@localhost -p 9uShwxwpd;wk
+
+UPDATE mysql.user SET Password=PASSWORD('jsql') WHERE User='root'; 
+
+mysql --host="35.184.45.160" --user=root --password
+
+
+
+2601:645:8102:d390:dc5d:eaac:72a7:8d96/64
+
+./cloud_sql_proxy -instances=jaydubulyoubee:us-central1:redb=tcp:3306
+
+
+./cloud_sql_proxy -instances=jaydubulyoubee:us-central1:redb=tcp:3306 -credential_file="/Users/jaybeaz/Downloads/jaydubulyoubee-ca9519bd796d.json"
+
+mysql -u root -p --host 127.0.0.1
+
+
++----------------+---------------+------+-----+---------+-------+
+| Field          | Type          | Null | Key | Default | Extra |
++----------------+---------------+------+-----+---------+-------+
+| property_type  | varchar(200)  | YES  |     | NULL    |       |
+| address        | varchar(200)  | YES  |     | NULL    |       |
+| city           | varchar(200)  | YES  |     | NULL    |       |
+| state          | varchar(2)    | YES  |     | NULL    |       |
+| zip            | varchar(9)    | YES  |     | NULL    |       |
+| location       | varchar(200)  | YES  |     | NULL    |       |
+| price          | float         | YES  |     | NULL    |       |
+| beds           | float         | YES  |     | NULL    |       |
+| baths          | float         | YES  |     | NULL    |       |
+| sq_ft          | float         | YES  |     | NULL    |       |
+| lot_size       | int(11)       | YES  |     | NULL    |       |
+| year_built     | int(11)       | YES  |     | NULL    |       |
+| days_on_market | int(11)       | YES  |     | NULL    |       |
+| cost_per_sqft  | float         | YES  |     | NULL    |       |
+| url            | varchar(1000) | YES  |     | NULL    |       |
+| mls_number     | varchar(100)  | NO   | PRI | NULL    |       |
+| hoa_monthly    | int(11)       | YES  |     | NULL    |       |
++----------------+---------------+------+-----+---------+-------+
+17 rows in set (0.07 sec)
+

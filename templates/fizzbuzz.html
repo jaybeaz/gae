@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<form method="get">
+			<label>
+				<div>Numberz</div>
+				<input type="text" name="n" value="{{n}}"></input>
+			</label>
+<!--            <div class="error">{{error}}</div> -->
+			
+            <input type="submit"></input>
+</form>
+
+<ol>
+  {% for i in range(1, n+1) %}
+    {% set fbz = "" %}
+    {% if i % 3 == 0 %}
+      {% set fbz = "Fizz" %}
+    {% endif %}
+    {% if i % 5 == 0 %}
+      {% set fbz = fbz + "Buzz" %}
+    {% endif %}
+    {% if not fbz %}
+      {% set fbz = i|string %}
+    {% endif %}
+    <li>{{ fbz }}</li>
+  {% endfor %}
+</ol>
+{% endblock %}
